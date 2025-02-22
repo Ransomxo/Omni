@@ -56,13 +56,16 @@ Create a `.env` file in both `backend/` and `frontend/`:
 #### 🔹 Backend (`backend/.env`)
 
 Firebase
-FIREBASE_API_KEY=your_api_key FIREBASE_AUTH_DOMAIN=your_auth_domain FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_API_KEY=your_api_key 
+FIREBASE_AUTH_DOMAIN=your_auth_domain 
+FIREBASE_PROJECT_ID=your_project_id
 
 OpenAI API Key
 OPENAI_API_KEY=your_openai_key
 
 OAuth Credentials
-GOOGLE_CLIENT_ID=your_google_client_id GOOGLE_CLIENT_SECRET=your_google_client_secret
+GOOGLE_CLIENT_ID=your_google_client_id 
+GOOGLE_CLIENT_SECRET=your_google_client_secret
 
 shell
 Copy
