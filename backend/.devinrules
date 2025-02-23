@@ -1,0 +1,21 @@
+# 🔹 Devin Backend Development Rules
+
+## 1️⃣ General Guidelines
+- ✅ All backend code must be developed and tested inside `backend/feature/{task-name}` before merging.
+- ✅ **NEVER push directly to `main`.** Instead, commit to `feature/backend-{task-name}` branches.
+- ✅ Backend testing must be completed before the final push.
+- ✅ Backend tasks should be broken into **small, independent modules**.
+
+## 2️⃣ Git Branching & Deployment Strategy
+- 📌 **Step 1:** Create a new branch for every feature  
+  `git checkout -b feature/backend-{task-name}`
+- 📌 **Step 2:** Commit changes inside `backend/feature/{task-name}`  
+- 📌 **Step 3:** Run all backend tests in `backend/tests/`
+- 📌 **Step 4:** If tests pass, push the branch and create a **Pull Request to `dev` branch**  
+  `git push origin feature/backend-{task-name}`
+- 📌 **Step 5:** After approval, **Cursor will merge it to `main`** (explicitly stated in `.cursorrules`)
+
+## 3️⃣ Who Pushes to `main`?
+- ❌ **Devin DOES NOT push directly to `main`.**
+- ✅ **Devin pushes to `dev`, then waits for Cursor to approve before merging to `main`.**
+

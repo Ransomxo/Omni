@@ -1,0 +1,23 @@
+# 🔹 Cursor Frontend Development Rules
+
+## 1️⃣ General Guidelines
+- ✅ All frontend work should be done inside `frontend/feature/{task-name}`.
+- ✅ **Cursor is responsible for merging the final approved code into `main`.**
+- ✅ All frontend components must be fully tested before merging.
+
+## 2️⃣ Git Branching & Deployment Strategy
+- 📌 **Step 1:** Create a new branch for every feature  
+  `git checkout -b feature/frontend-{task-name}`
+- 📌 **Step 2:** Commit changes inside `frontend/feature/{task-name}`  
+- 📌 **Step 3:** Run frontend tests in `frontend/tests/`
+- 📌 **Step 4:** If tests pass, push the branch and create a **Pull Request to `dev` branch**  
+  `git push origin feature/frontend-{task-name}`
+- 📌 **Step 5:** **Cursor will review the backend (`dev`) branch and merge final code into `main`.**
+
+## 3️⃣ Who Pushes to `main`?
+- ❌ **Cursor DOES NOT push directly to `main`.**
+- ✅ **Cursor merges `backend/dev` into `main` ONLY when:**
+  - Backend APIs are tested and functional.
+  - UI components are fully tested.
+  - The full feature has been approved.
+
